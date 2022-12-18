@@ -1,0 +1,49 @@
+body {
+    margin:0;
+    position: relative;
+    overflow: auto;
+    background-color: cornsilk;
+    font-family: sans-serif;
+}
+
+header {
+    display:flex; 
+    justify-content: space-between;
+}
+
+nav {
+    margin-top: 140px; 
+    width: 35%; 
+    display: flex; 
+    justify-content: space-between; 
+    font-size: 25px;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    color:dimgray;
+}
+
+table{
+    border-collapse: collapse;
+    width: 75%;
+    margin: auto;
+    font-size: 22px;
+}
+
+th{
+    text-align: center;
+    background-color: #c7bdb6;
+   
+}
+
+td{
+    text-align: center;
+}
+
+h3{
+    font-size: 20px;
+}

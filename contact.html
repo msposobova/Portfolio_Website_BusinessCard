@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Maryna Sposabava Portfolio </title>
+        <meta charset="utf-8">
+        <link href="styles.css"
+              rel="stylesheet"
+              type="text/css">
+    </head>
+    
+    <body>
+        <div style = "width: 70%; margin: auto">
+            <!--header is a part of a webpage containing a logo and a menu-->
+            <header>
+                
+                <div>
+                    <!--This tag adds an image-->
+                    <a href=index.html>
+                        <img src="img/img1.png" alt="logo" width=150px>
+                    </a>
+                </div>
+                <!--This is menu with links to other pages-->
+                <nav>
+                    <a style = "position: relative; margin-right: 25px; padding-left: 2px; text-decoration: none" href="index.html">home</a>
+                    <a style = "position: relative; margin-right: 25px; padding-left: 2px; text-decoration: none" href="skills.html">skills</a>
+                    <a style = "position: relative; margin-right: 25px; padding-left: 2px; text-decoration: none" href="portfolio.html">portfolio</a>
+                    <a style = "position: relative; padding-left: 2px; text-decoration: none" href="contact.html">contact</a>
+                </nav>
+                
+            </header>
+            <!--main part of the contents is stored under the "main" tag-->
+            <main>
+                <br>
+                <hr>
+                <hr>
+                <br>
+                
+                <div style="margin: auto; text-align: center; max-width: 800px; font-size: 22px">
+                <!--<p> tag is used to display the text inside it on a web page of a web browser-->
+                <p><b>Please, choose what type of testing you are currently hiring for:</b></p>
+               
+                <form style="text-align:left">
+                    <!--Input type radio creates a choice for a user. Only one can be checked-->
+                    <input type="radio" id="manual" name="type" value="manual">
+                    <label for="manual">Manual</label>
+                    <br>
+                    <input type="radio" id="automation" name="type" value="automation">
+                    <label for="automation">Automation</label>
+                </form>
+                
+                <p><b>Please, check out what kinds of tests you need to cover:</b></p>
+                
+                <form style="text-align:left">
+                    <!--Input type checkbox creates a multiple choice for a user. Several one can be checked-->
+                    <input type="checkbox" id="integration" name="kind" value="integration">
+                    <label for="integration">Integration testing</label>
+                    <br>
+                    <input type="checkbox" id="regression" name="kind" value="regression">
+                    <label for="regression">Regression testing</label>
+                    <br>
+                    <input type="checkbox" id="exploratory" name="kind" value="exploratory">
+                    <label for="exploratory">Exploratory testing</label>
+                    <br>
+                    <input type="checkbox" id="acceptance" name="kind" value="acceptance">
+                    <label for="acceptance">User acceptance testing</label>
+                    <br>
+                    <input type="checkbox" id="static" name="kind" value="static">
+                    <label for="static">Static testing</label>
+                    <br>
+                    <input type="checkbox" id="dinamic" name="kind" value="dinamic">
+                    <label for="dinamic">Dinamic testing</label>
+                </form>
+                
+                <p><b>Please enter your information here to schedule an interview:</b></p>
+                <!--The next pair of tags creates an input form-->
+                <form style="text-align:left">
+                    <!--A 'label' pair of tags creates a prompt what to write in an input field-->
+                    <label for="name">*Company Name:</label>
+                    <br>
+                    <input type="text" id="name" name="name" maxlength="60" size="109">
+                    <br>
+                    <br>
+                    <!--This tag creates an input field-->
+                    <label for="email">*Email:</label>
+                    <br>
+                    <input type="text" id="email" name="email" maxlength="60" size="109">
+                    <br>
+                </form>
+                
+                <p><b>Please enter your preferred interview date and time as well as any additional information or question here:</b></p>
+                <!--The next pair of tags creates an input form-->
+                <form style="text-align:left">
+                    <!--A 'label' pair of tags creates a prompt what to write in an input field-->
+                    <label for="message">*Your Message/Question:</label>
+                    <br>
+                    <textarea id="message" name="message" maxlength="200" cols="106" rows="10"></textarea>
+                </form>
+                
+                <br>
+                <form action="/thebuttontonowhere.php">
+                    <input style="background-color:darkorange; width: 210px; height: 30px; border-radius: 5%; font-size: 18px" type="submit" value="Schedule an Interview">
+                </form>
+                <br><br><br>
+                </div>
+            </main>
+        </div>
+    </body>
+    
+</html>
